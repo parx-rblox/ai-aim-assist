@@ -13,7 +13,10 @@ from src.mouse import MouseController
 from src.overlay import Overlay
 from src.utils import load_config, get_screen_center, closest_target
 
-
+def resource_path(relative_path: str) -> Path:
+    if hasattr(sys, "_MEIPASS"):
+        return Path(sys._MEIPASS) / relative_path
+    return Path(__file__).resolve().parent / relative_path
 def main():
     config = load_config("config.yaml")
 
