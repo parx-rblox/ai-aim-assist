@@ -1,0 +1,30 @@
+# ============================================================
+# AI Aim Assist - Configuration
+# ============================================================
+
+# --- Detection ---
+model_path: "models/yolov8n.pt"   # Path to YOLO .pt model file
+target_class: 0                    # Class index to target (0=person in COCO, -1=all)
+confidence: 0.50                   # Minimum detection confidence (0.0 - 1.0)
+
+# --- Screen Capture Region (centered on screen) ---
+capture_width: 640                 # Width of capture region in pixels
+capture_height: 640                # Height of capture region in pixels
+
+# --- Aim Settings ---
+fov_radius: 200                    # Circular FOV limit in pixels (0 = disabled)
+smoothing: 6.0                     # Mouse smoothing factor (1 = instant, 10 = very smooth)
+aim_offset_x: 0                    # Horizontal aim offset from target center
+aim_offset_y: -20                  # Vertical offset (negative = aim higher, for headshots)
+
+# --- Trigger Bot ---
+trigger_enabled: false             # Auto-click when crosshair is over target
+trigger_fov: 10                    # Pixel radius for trigger activation
+
+# --- Controls ---
+toggle_key: "F1"                   # Hotkey to toggle aim assist on/off
+overlay: true                      # Show real-time debug overlay window
+
+# --- Hardware ---
+device: "auto"                     # "auto" = use GPU if available, else CPU
+                                   # "cuda" = force GPU, "cpu" = force CPU

@@ -1,0 +1,21 @@
+# Core AI / Computer Vision
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Screen capture
+mss>=9.0.1
+
+# Mouse / keyboard control
+pynput>=1.7.6
+
+# Windows-specific mouse (optional, faster on Windows)
+# pywin32>=306
+
+# Configuration
+pyyaml>=6.0
+
+# Utilities
+Pillow>=10.0.0
