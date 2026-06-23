@@ -18,7 +18,7 @@ def resource_path(relative_path: str) -> Path:
         return Path(sys._MEIPASS) / relative_path
     return Path(__file__).resolve().parent / relative_path
 def main():
-    config = load_config("config.yaml")
+    config = load_config(str(resource_path("config.yaml")))
 
     print("\n🎯 AI Aim Assist — Starting...")
     print(f"   Model : {config['model_path']}")
