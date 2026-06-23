@@ -30,7 +30,8 @@ jobs:
           pip install pyinstaller
 
       - name: Build EXE
-        run: pyinstaller --onefile --windowed --name app main.py
+  run: pyinstaller --onefile --windowed --add-data "config.yaml;." --name app main.py
+
 
       - name: Zip build
         shell: pwsh
