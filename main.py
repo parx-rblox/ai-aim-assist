@@ -1,5 +1,7 @@
 """AI Aim Assist - Main entry point."""
 
+import sys
+from pathlib import Path
 import time
 import threading
 import yaml
